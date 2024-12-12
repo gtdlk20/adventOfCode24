@@ -31,7 +31,7 @@ def count_arrangements(sequences):
     Count the number of sequences
     that are safe.
     """
-    return sum(is_safe(sequence) for sequence in sequence)
+    return sum(is_safe(sequence) for sequence in sequences)
 
 
 def load_data(datapath):
