@@ -11,7 +11,6 @@ def load_data(path):
 def calculate_similarity_score(data):
     x1s, x2s = [], []
 
-    
     for line in data:
         if len(line) > 0:
             parsed = [int(x.strip()) for x in line.split()]
