@@ -2,7 +2,7 @@
 def is_increasing(sequence):
     """Check if sequence is increasing."""
     for i in range(1, len(sequence)):
-        if sequence[i] - sequence[i-1] in [1,2,3]:
+        if sequence[i] - sequence[i-1] not in [1,2,3]:
             return False
     return True
 
@@ -10,11 +10,9 @@ def is_increasing(sequence):
 def is_decreasing(sequence):
     """Check if sequence is decreasing."""
     for i in range(1, len(sequence)):
-        if sequence[i] - sequence[i-1] in [-1,-2,-3]:
+        if sequence[i] - sequence[i-1] not in [-1,-2,-3]:
             return False
     return True
-
-
 
 
 def is_safe(sequence):
